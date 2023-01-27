@@ -5,7 +5,8 @@
 # deletes the file and terminates when receiving a SIGQUIT or SIGTERM signal
 echo "$$" > /var/run/myscript.pid
 
-function clean_up {
+function clean_up
+{
     sudo rm /var/run/myscript.pid
 }
 
@@ -19,4 +20,4 @@ while true; do
     sleep 2
 done
 
-clean up
+clean_up
